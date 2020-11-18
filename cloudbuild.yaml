@@ -22,3 +22,9 @@ steps:
   - '--allow-unauthenticated'
 images:
   - 'gcr.io/$PROJECT_ID/bracelets-mosquitto'
+    ports:
+      - containerPort: 8883
+      resources:
+        limits:
+        cpu: 1000m
+        memory: 256Mi
